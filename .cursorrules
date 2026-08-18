@@ -1,0 +1,54 @@
+# SYSTEM RULES & CONTEXT: SIPANDA (SISTEM INFORMASI PENYAJIAN INDIKATOR DAERAH)
+
+## 1. OVERVIEW PROYEK
+SIPANDA adalah platform web diseminasi data statistik interaktif untuk BPS Kabupaten Teluk Bintuni. Aplikasi ini bertujuan menyajikan indikator strategis daerah dengan pendekatan modern, interaktif, dan mudah dipahami oleh masyarakat umum maupun stakeholder pemerintah daerah.
+
+---
+
+## 2. ARSITEKTUR ALUR & KONSEP UI/UX (CORE FLOW)
+
+Aplikasi memiliki alur navigasi utama 2 lapis:
+
+### A. Halaman Utama (Main Dashboard)
+- Menampilkan kumpulan **Summary Cards / Indicator Cards** responsif untuk setiap indikator strategis daerah (misal: Kemiskinan, Tingkat Pengangguran Terbuka/TPT, Pertumbuhan Ekonomi, PDRB, Angka Harapan Hidup/IPM, Gini Ratio, dll.).
+- Setiap Card memuat:
+  - Judul indikator & periode data terbaru.
+  - Nilai/angka utama dengan tipografi yang tegas dan terbaca jelas.
+  - Indikator tren singkat (misal: ikon/badge kenaikan atau penurunan dibanding periode sebelumnya).
+  - Micro-interaction / Hover effect yang memberi *affordance* bahwa card dapat diklik.
+- **Trigger Aksi**: Ketika card diklik, pengguna akan diarahkan ke halaman detail indikator terkait.
+
+### B. Halaman Detail (Konsep: Web Story / Visual Data Storytelling)
+- Setiap indikator memiliki halaman detail bergaya **Web Story / Interactive Story Cards**.
+- Struktur Konten Web Story:
+  1. **Hero Story Card / Visual Utama**:
+     - Menampilkan **ilustrasi vektor/animasi 2D flat modern** (SVG / Lottie animation) yang relevan dan tematik (misal: ilustrasi vektor keluarga & bantuan sosial untuk kemiskinan, ilustrasi vektor bayi/tumbuh kembang untuk Angka Harapan Hidup, ilustrasi perkantoran/pekerja untuk ketenagakerjaan).
+     - **ATURAN VISUAL PENTING**: JANGAN gunakan foto riil/fotografi orang asli, melainkan wajib menggunakan vektor/kartun/ilustrasi 2D/3D flat design yang ramah, profesional, dan estetis.
+  2. **Highlight Angka & Insight Singkat**:
+     - Angka data spesifik dengan penulisan satuan yang jelas.
+     - Narasi penjelasan singkat (*bite-sized insight*) menggunakan bahasa komunikatif yang menjelaskan arti dari angka tersebut bagi orang awam.
+  3. **Visualisasi Data Pendukung**:
+     - Grafik tren deret waktu (Line Chart / Bar Chart) interaktif untuk melihat pergerakan beberapa tahun terakhir.
+  4. **Navigasi Story**:
+     - Tombol kembali ke dashboard utama (*Back to Dashboard*).
+     - Kemudahan navigasi atau swipe/next ke cerita indikator strategis berikutnya.
+
+---
+
+## 3. PANDUAN PENGEMBANGAN TEKNIS (AI AGENT INSTRUCTIONS)
+
+1. **Komponen & Reusability**:
+   - Pisahkan komponen secara modular: `IndicatorCard`, `StoryLayout`, `StoryVisual`, `DataChart`, dan `StatBadge`.
+   - Gunakan data mock / state management yang rapi dan terstruktur (`indicators.json` atau static type definitions) agar penambahan indikator baru dapat dilakukan secara deklaratif.
+
+2. **Aset Grafis & Ilustrasi**:
+   - Siapkan *placeholder* aset atau komponen ilustrasi berbasis SVG, Icon Library (misal: Lucide React), atau Lottie/UnDraw/Storyset style illustration.
+   - Pastikan setiap komponen ilustrasi mendukung *fallback* visual jika aset gambar belum dimuat.
+
+3. **Styling & Responsiveness**:
+   - Buat tampilan yang mobile-friendly, clean, serta modern (glassmorphism/card-based layout yang rapi).
+   - Gunakan palet warna yang harmonis, profesional, dan kontras (tetap selaras dengan nuansa identitas statistik).
+   - Pastikan transisi antarhalaman atau animasi kartu terasa halus (*smooth transition/framer-motion* jika ada).
+
+4. **Code Quality**:
+   - Tulis kode yang modular, bebas *spaghetti code*, memiliki komentar penjelas fungsi yang jelas, dan penamaan variabel/properti yang semantik dalam bahasa Inggris atau Indonesia yang konsisten.
