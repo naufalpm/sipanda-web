@@ -115,7 +115,7 @@ export default function HomePage() {
                 Penyajian Indikator Daerah
               </h2>
               <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
-                Pilih kartu indikator untuk melihat narasi analisis, grafik tren multi-tahun, dan visualisasi Web Story.
+                Pilih kartu indikator untuk melihat narasi analisis, grafik tren historis, dan publikasi resmi BPS.
               </p>
             </div>
 
@@ -222,7 +222,7 @@ export default function HomePage() {
                 </span>
               </div>
               <p className="text-xs text-slate-500 mt-1">
-                Perubahan: {quickModalIndicator.changeValue > 0 ? '+' : ''}{quickModalIndicator.changeValue} {quickModalIndicator.unit} ({quickModalIndicator.changePercent}%) dibanding tahun {quickModalIndicator.previousYear}
+                Perubahan: {quickModalIndicator.changeValue > 0 ? '+' : ''}{quickModalIndicator.changeValue} {quickModalIndicator.unit} ({quickModalIndicator.changePercent}%) dari tahun {quickModalIndicator.previousYear}
               </p>
             </div>
 
@@ -257,7 +257,7 @@ export default function HomePage() {
                 href={`/indicator/${quickModalIndicator.slug}`}
                 className="inline-flex items-center gap-2 px-5 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-md shadow-blue-500/20 cursor-pointer"
               >
-                <span>Buka Web Story Lengkap</span>
+                <span>Buka Penjelasan Detail</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

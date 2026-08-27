@@ -20,6 +20,27 @@ export interface DataPoint {
   note?: string;
 }
 
+export interface Publication {
+  id: string;
+  title: string;
+  year: number;
+  publisher: string;
+  catalogNumber?: string;
+  publicationNumber?: string;
+  issnOrIsbn?: string;
+  frequency?: string;
+  releaseDate: string;
+  language?: string;
+  fileSize?: string;
+  coverGradient?: string;
+  coverImage?: string;
+  description: string;
+  abstraction?: string;
+  pageCount?: number;
+  pdfUrl?: string;
+  bpsUrl?: string;
+}
+
 export interface IndicatorStory {
   title: string;
   subtitle: string;
@@ -31,6 +52,13 @@ export interface IndicatorStory {
     description: string;
   }[];
   policyContext?: string;
+  humanScaleMeaning?: {
+    ratioText: string;
+    numerator: number;
+    denominator: number;
+    description: string;
+    contextNote?: string;
+  };
 }
 
 export interface StrategicIndicator {
@@ -54,6 +82,7 @@ export interface StrategicIndicator {
   isPositiveChange: boolean;
   insightSnippet: string;
   story: IndicatorStory;
+  publications?: Publication[];
   source: string;
   updatedAt: string;
   featured?: boolean;

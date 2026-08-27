@@ -1,0 +1,718 @@
+# SIPANDA — INTERACTIVE INDICATOR WEB STORY
+
+## 1. PROJECT CONTEXT
+
+SIPANDA (Sistem Informasi Penyajian Indikator Daerah) adalah platform web diseminasi data statistik untuk BPS Kabupaten Teluk Bintuni.
+
+Tujuan SIPANDA adalah menyajikan indikator strategis daerah secara terintegrasi, ringkas, informatif, modern, dan mudah dipahami oleh masyarakat umum maupun stakeholder.
+
+Dashboard utama SIPANDA **SUDAH SELESAI**.
+
+**JANGAN mendesain ulang, merombak, atau mengganti dashboard utama yang sudah ada.**
+
+Tugas saat ini hanya:
+
+> **Membangun halaman detail indikator berbentuk Interactive Data Story / Scrollytelling yang terbuka ketika pengguna mengklik Indicator Card pada dashboard.**
+
+Flow yang diinginkan:
+
+`Dashboard → Klik Indicator Card → Web Story Indicator`
+
+Contoh:
+
+`/indikator/kemiskinan`
+
+---
+
+# 2. CORE CONCEPT
+
+Halaman detail harus terasa seperti **interactive statistical story**, bukan seperti dashboard kedua dan bukan seperti artikel panjang.
+
+Gunakan konsep:
+
+* scroll-driven storytelling
+* sticky visual
+* progressive information reveal
+* smooth scene transition
+* interactive data visualization
+
+Referensi pengalaman interaksi:
+
+* The Guardian Visual Explainer
+* Reuters Graphics
+
+**JANGAN menyalin desain, layout, ilustrasi, teks, atau branding dari referensi tersebut.**
+
+Yang diadaptasi hanya mekanisme:
+
+* visual storytelling,
+* scroll interaction,
+* sticky elements,
+* scene transition,
+* visual yang merespons scroll.
+
+SIPANDA tetap harus memiliki identitas visual dan design system sendiri yang mengikuti dashboard yang sudah ada.
+
+---
+
+# 3. IMPORTANT DESIGN DIRECTION
+
+Web Story harus **SINGKAT**.
+
+Jangan membuat halaman seperti artikel panjang dengan banyak paragraf.
+
+Tujuan utama halaman:
+
+> Pengguna melihat angka → memahami artinya → melihat perubahannya → dapat membuka sumber publikasi resmi.
+
+Fokus utama:
+
+**ANGKA → PENJELASAN → PERUBAHAN/TREN → PUBLIKASI**
+
+Idealnya pengguna dapat memahami indikator hanya dalam beberapa scroll.
+
+---
+
+# 4. STORY FLOW
+
+Gunakan 4 bagian utama.
+
+## SCENE 1 — MAIN STATISTIC
+
+Saat pengguna pertama kali masuk:
+
+Tampilkan secara besar dan visual:
+
+* Nama indikator
+* Nilai terbaru
+* Satuan
+* Periode
+* Ilustrasi tematik
+* Petunjuk scroll
+
+Contoh:
+
+### KEMISKINAN
+
+**19,24%**
+
+*Maret 2025*
+
+Visual harus menjadi elemen penting pada halaman.
+
+Gunakan ilustrasi:
+
+* SVG
+* flat illustration
+* 2D vector
+* simple 3D illustration
+* Lottie jika tersedia
+
+**JANGAN menggunakan foto manusia asli.**
+
+---
+
+# 5. SCENE 2 — SIMPLE EXPLANATION
+
+Saat pengguna mulai scroll:
+
+Pertahankan visual utama dalam posisi sticky atau gunakan transisi visual yang halus.
+
+Tampilkan penjelasan yang sangat singkat dan mudah dipahami.
+
+Gunakan pola:
+
+### Apa artinya?
+
+Contoh:
+
+> "Sekitar 19 dari setiap 100 penduduk berada di bawah garis kemiskinan."
+
+Jangan membuat paragraf panjang.
+
+Penjelasan harus:
+
+* komunikatif,
+* singkat,
+* mudah dipahami orang awam,
+* berdasarkan data yang tersedia.
+
+Tujuan scene ini adalah menjawab:
+
+> "Angka ini sebenarnya menggambarkan apa?"
+
+---
+
+# 6. SCENE 3 — CHANGE / TREND
+
+Saat pengguna scroll lebih lanjut:
+
+Tampilkan bagaimana indikator berubah dari waktu ke waktu.
+
+Contoh:
+
+**19,24%**
+
+↓ **0,26 poin**
+
+dibandingkan periode sebelumnya.
+
+Kemudian tampilkan grafik sederhana beberapa periode:
+
+`2021 → 2022 → 2023 → 2024 → 2025`
+
+Gunakan:
+
+* Line Chart
+* Bar Chart
+
+Pilih jenis grafik berdasarkan karakteristik data.
+
+## IMPORTANT
+
+Grafik harus merespons scroll.
+
+Contoh:
+
+Awal scene:
+
+* grafik belum lengkap
+
+Scroll:
+
+* titik data muncul
+* garis/bar mulai terbentuk
+* data berkembang secara progresif
+
+Scroll berikutnya:
+
+* grafik lengkap
+* titik penting diberi highlight
+
+Gunakan animasi yang smooth dan tidak berlebihan.
+
+---
+
+# 7. SCROLL INTERACTION
+
+Jangan membuat efek:
+
+`scroll → section muncul → fade in → selesai`
+
+Itu terlalu sederhana.
+
+Gunakan:
+
+**Scroll position → perubahan visual**
+
+Contoh:
+
+```text
+Scroll
+↓
+Visual tetap sticky
+↓
+angka utama menjadi fokus
+↓
+grafik mulai terbentuk
+↓
+titik data muncul
+↓
+grafik lengkap
+↓
+insight/perubahan muncul
+```
+
+Gunakan sticky visual pada desktop jika sesuai dengan layout.
+
+Visual dapat:
+
+* scale,
+* move,
+* fade,
+* transform,
+* berganti ilustrasi,
+* berubah menjadi chart.
+
+Tetapi semua animasi harus mendukung pemahaman data, bukan sekadar dekorasi.
+
+---
+
+# 8. SCENE 4 — RELATED PUBLICATIONS
+
+Bagian terakhir bukan hanya menampilkan "Sumber: BPS".
+
+Buat section:
+
+## Pelajari lebih lanjut
+
+Tampilkan publikasi resmi BPS yang berkaitan dengan indikator.
+
+Setiap publikasi dibuat dalam bentuk card.
+
+Contoh:
+
+```text
+┌───────────────────────────────┐
+│                               │
+│       [COVER PUBLIKASI]       │
+│                               │
+├───────────────────────────────┤
+│ Kemiskinan Kabupaten          │
+│ Teluk Bintuni 2025            │
+│                               │
+│ BPS Kabupaten Teluk Bintuni   │
+│                               │
+│ [Lihat Publikasi] [Unduh PDF] │
+└───────────────────────────────┘
+```
+
+Gunakan **cover publikasi asli** jika aset tersedia.
+
+Jika terdapat beberapa publikasi:
+
+Gunakan horizontal card/carousel.
+
+Contoh:
+
+```text
+Publikasi Terkait
+
+[ Cover 1 ]   [ Cover 2 ]   [ Cover 3 ]
+  Judul          Judul          Judul
+  [Baca]         [Baca]         [Baca]
+```
+
+Tujuannya agar pengguna yang membutuhkan informasi lebih lengkap dapat langsung membuka atau mengunduh publikasi resmi.
+
+---
+
+# 9. PUBLICATION DATA STRUCTURE
+
+Jangan hardcode informasi publikasi langsung pada component.
+
+Gunakan struktur data seperti:
+
+```ts
+interface Publication {
+  title: string;
+  year: number;
+  cover: string;
+  url?: string;
+  downloadUrl?: string;
+}
+```
+
+Indicator dapat memiliki:
+
+```ts
+interface Indicator {
+  id: string;
+  slug: string;
+  title: string;
+  value: number;
+  unit: string;
+  period: string;
+  previousValue?: number;
+  description: string;
+  trend?: TrendData[];
+  publications?: Publication[];
+}
+```
+
+**PENTING:**
+
+Sebelum membuat struktur baru, inspect project yang sudah ada.
+
+Jika sudah terdapat data structure atau type definition untuk indikator, gunakan struktur existing tersebut.
+
+Jangan membuat duplikasi data model tanpa alasan.
+
+---
+
+# 10. INITIAL PROTOTYPE
+
+Jangan langsung membuat semua indikator.
+
+Buat prototype lengkap terlebih dahulu untuk:
+
+**KEMISKINAN KABUPATEN TELUK BINTUNI**
+
+Prototype harus memiliki:
+
+1. Main Statistic
+2. Sticky/Animated Illustration
+3. Simple Explanation
+4. Scroll-driven Trend
+5. Publication Section
+
+Setelah struktur dan interaction sudah bagus, jadikan sebagai reusable template untuk indikator lainnya.
+
+---
+
+# 11. REUSABLE COMPONENTS
+
+Bangun komponen yang reusable.
+
+Minimal:
+
+```text
+IndicatorStory
+├── StoryHero
+├── StoryScene
+├── StoryVisual
+├── StatHighlight
+├── StoryExplanation
+├── TrendChart
+├── PublicationSection
+├── PublicationCard
+└── StoryNavigation
+```
+
+Satu `IndicatorStory` dapat digunakan untuk:
+
+* Kemiskinan
+* TPT
+* TPAK
+* PDRB
+* Pertumbuhan Ekonomi
+* IPM
+* Angka Harapan Hidup
+* Gini Ratio
+* indikator lainnya
+
+Yang berubah hanya data, visual, dan konten.
+
+---
+
+# 12. NAVIGATION
+
+Pada halaman Web Story sediakan:
+
+* Back to Dashboard
+* indikator sebelumnya
+* indikator berikutnya
+* progress indicator jika sesuai
+
+Contoh:
+
+```text
+← Kembali ke Dashboard
+
+KEMISKINAN
+
+01 / 08
+
+← Sebelumnya              Berikutnya →
+```
+
+Navigation jangan mengganggu storytelling.
+
+---
+
+# 13. VISUAL STYLE
+
+Pertahankan visual identity yang sudah digunakan oleh dashboard SIPANDA.
+
+**Jangan membuat Web Story terlihat seperti aplikasi yang berbeda.**
+
+Gunakan:
+
+* clean
+* modern
+* editorial
+* spacious
+* professional
+* data-focused
+* visually engaging
+
+Tetap gunakan:
+
+* typography existing
+* color palette existing
+* spacing existing
+* border radius existing
+* component style existing
+
+selama sesuai dengan konsep storytelling.
+
+Prioritas visual:
+
+**angka utama > visual > insight > grafik > metadata**
+
+---
+
+# 14. ILLUSTRATION STYLE
+
+Setiap indikator memiliki visual yang relevan.
+
+Contoh:
+
+Kemiskinan:
+
+* keluarga
+* rumah
+* bantuan sosial
+
+TPT:
+
+* pekerja
+* kantor
+* pencari kerja
+
+PDRB:
+
+* industri
+* perdagangan
+* aktivitas ekonomi
+
+IPM:
+
+* pendidikan
+* kesehatan
+* masyarakat
+
+Angka Harapan Hidup:
+
+* kesehatan
+* keluarga
+* lansia
+
+Illustration harus menggunakan satu visual language yang konsisten.
+
+---
+
+# 15. TECHNICAL IMPLEMENTATION
+
+**Gunakan teknologi yang SUDAH digunakan project saat ini.**
+
+Sebelum coding:
+
+1. inspect project structure,
+2. inspect package.json,
+3. inspect existing routing,
+4. inspect existing components,
+5. inspect existing indicator data,
+6. inspect existing styling system.
+
+**JANGAN mengganti framework atau melakukan refactor besar-besaran.**
+
+Untuk scroll-driven interaction, gunakan:
+
+### Preferred:
+
+**GSAP + ScrollTrigger**
+
+Gunakan GSAP terutama untuk:
+
+* sticky/pinning,
+* scroll progress,
+* scene transition,
+* chart reveal,
+* parallax,
+* timeline.
+
+Gunakan CSS/Framer Motion untuk animasi kecil jika lebih sederhana.
+
+---
+
+# 16. RESPONSIVE BEHAVIOR
+
+## Desktop
+
+Gunakan:
+
+```text
+Visual Sticky | Content Scroll
+```
+
+Visual tetap berada pada viewport saat scene berubah.
+
+## Mobile
+
+Ubah menjadi single-column storytelling.
+
+Contoh:
+
+```text
+Illustration
+↓
+Number
+↓
+Explanation
+↓
+Chart
+↓
+Publications
+```
+
+Tetap mempertahankan interaksi scroll tetapi jangan memaksa sticky layout jika mengganggu usability.
+
+**Jangan gunakan horizontal page scrolling.**
+
+---
+
+# 17. ACCESSIBILITY
+
+Pastikan:
+
+* angka utama tersedia dalam text,
+* grafik memiliki accessible label,
+* warna memiliki kontras yang baik,
+* informasi tidak hanya dibedakan berdasarkan warna,
+* navigation dapat digunakan dengan keyboard,
+* tidak ada informasi penting yang hanya muncul melalui animasi.
+
+Dukung:
+
+`prefers-reduced-motion`
+
+Jika user memilih reduced motion:
+
+* kurangi animation,
+* jangan menghilangkan informasi,
+* ubah menjadi versi storytelling yang lebih statis.
+
+---
+
+# 18. DATA ACCURACY
+
+JANGAN mengarang data statistik BPS.
+
+Jika data asli belum tersedia di project:
+
+gunakan mock data dengan penanda jelas:
+
+`MOCK DATA`
+
+Jangan menyebut mock data sebagai data resmi.
+
+Insight harus berasal dari data yang tersedia.
+
+Jangan membuat klaim sebab-akibat tanpa sumber yang mendukung.
+
+Contoh yang TIDAK BOLEH dibuat tanpa bukti:
+
+> "Kemiskinan turun karena pertumbuhan ekonomi meningkat."
+
+Lebih aman:
+
+> "Tingkat kemiskinan menurun dibandingkan periode sebelumnya."
+
+---
+
+# 19. PERFORMANCE
+
+Karena halaman menggunakan animasi:
+
+* gunakan SVG ringan,
+* lazy-load publication covers jika diperlukan,
+* lazy-load chart jika memungkinkan,
+* hindari asset video besar,
+* minimalkan layout shift,
+* gunakan transform/opacity untuk animasi,
+* pastikan halaman tetap nyaman pada mobile.
+
+Scroll interaction harus smooth.
+
+---
+
+# 20. CRITICAL SUCCESS CRITERIA
+
+Prototype dianggap berhasil jika:
+
+### A. Integration
+
+Indicator Card pada dashboard dapat diklik dan membuka halaman Web Story indikator.
+
+### B. Storytelling
+
+User dapat memahami indikator hanya dengan beberapa scroll.
+
+### C. Interaction
+
+Scroll benar-benar memengaruhi visual/angka/grafik.
+
+### D. Simplicity
+
+Tidak terasa seperti artikel panjang.
+
+### E. Visual
+
+Ilustrasi dan grafik terasa modern dan relevan.
+
+### F. Source
+
+Pengguna dapat menemukan publikasi resmi terkait dan membuka/mengunduh PDF.
+
+### G. Reusability
+
+Template dapat digunakan kembali untuk indikator lain.
+
+---
+
+# 21. FINAL USER EXPERIENCE
+
+Target pengalaman:
+
+```text
+DASHBOARD
+    ↓
+Klik Indicator Card
+    ↓
+ANGKA UTAMA
+    ↓
+Scroll
+    ↓
+"APA ARTINYA?"
+    ↓
+Scroll
+    ↓
+"TREN / PERUBAHANNYA"
+    ↓
+Scroll
+    ↓
+"PELAJARI LEBIH LANJUT"
+    ↓
+Publikasi BPS
+    ↓
+Baca / Unduh PDF
+```
+
+Keseluruhan halaman harus terasa seperti:
+
+> **A short interactive statistical story**
+
+bukan:
+
+> **A second dashboard**
+
+dan bukan:
+
+> **A long statistical article**
+
+---
+
+# 22. FIRST ACTION FOR THE AGENT
+
+Sebelum melakukan perubahan kode:
+
+1. Inspect existing SIPANDA dashboard.
+2. Temukan Indicator Card component.
+3. Temukan routing/dashboard navigation.
+4. Temukan data model indikator.
+5. Identifikasi design system existing.
+6. Tentukan route detail indikator.
+7. Implementasikan Web Story prototype untuk Kemiskinan.
+8. Hubungkan Indicator Card → Web Story.
+9. Test desktop.
+10. Test mobile.
+11. Pastikan dashboard existing tidak rusak.
+
+**JANGAN mengubah dashboard utama kecuali hanya bagian yang diperlukan untuk menghubungkan card ke halaman Web Story.**
+
+Fokus prototype pertama adalah:
+
+**quality of scroll interaction + simplicity + visual storytelling.**
+
+Jangan mengejar banyak fitur sebelum pengalaman scroll utama sudah terasa bagus.

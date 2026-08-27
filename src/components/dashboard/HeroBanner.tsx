@@ -41,8 +41,7 @@ export function HeroBanner({ indicators, onSelectIndicator }: HeroBannerProps) {
             </span>
           </h1>
           <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Portal resmi diseminasi data statistik Kabupaten Teluk Bintuni. Menyajikan visualisasi data, 
-            analisis capaian pembangunan manusia, ketenagakerjaan, serta pertumbuhan ekonomi daerah secara transparan, akurat, dan komunikatif.
+            Sistem Informasi Penyajian Indikator Daerah (SIPANDA) menyajikan data makro pembangunan Kabupaten Teluk Bintuni—mulai dari indikator kemiskinan, ketenagakerjaan, hingga pertumbuhan ekonomi—secara terintegrasi, interaktif, dan mudah diakses untuk mendukung pengambilan keputusan berbasis data.
           </p>
         </div>
       </div>
