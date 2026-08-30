@@ -111,11 +111,11 @@ export function IndicatorStoryContainer({
         className="hidden xl:flex fixed right-6 top-1/2 -translate-y-1/2 z-30 flex-col items-end gap-3 pointer-events-auto"
         aria-label="Navigasi Bagian Cerita"
       >
-        <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-2 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-xl flex flex-col gap-2">
+        <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-2 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-xl shadow-slate-900/5 flex flex-col gap-1.5 min-w-[145px]">
           {[
             { id: 'top', label: '1. Angka Utama', num: 1 },
             { id: 'scene-explanation', label: '2. Apa Artinya?', num: 2 },
-            { id: 'scene-trend', label: '3. Dinamika Tren', num: 3 },
+            { id: 'scene-trend', label: '3. Tren', num: 3 },
             { id: 'scene-publications', label: '4. Publikasi BPS', num: 4 },
           ].map((scene) => {
             const isActive = activeScene === scene.num;
@@ -123,19 +123,19 @@ export function IndicatorStoryContainer({
               <button
                 key={scene.num}
                 onClick={() => (scene.id === 'top' ? window.scrollTo({ top: 0, behavior: 'smooth' }) : scrollToScene(scene.id))}
-                className={`group flex items-center justify-end gap-2.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+                className={`group flex items-center justify-between gap-2.5 px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
                   isActive
-                    ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
-                    : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                    ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25 font-bold'
+                    : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
                 }`}
                 title={scene.label}
               >
-                <span className={`text-[11px] transition-all ${isActive ? 'inline-block font-bold' : 'hidden group-hover:inline-block'}`}>
+                <span className="text-[11px] whitespace-nowrap">
                   {scene.label}
                 </span>
                 <span
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
-                    isActive ? 'bg-white scale-125' : 'bg-slate-300 dark:bg-slate-700 group-hover:bg-blue-400'
+                  className={`w-2 h-2 rounded-full transition-all shrink-0 ${
+                    isActive ? 'bg-white scale-125' : 'bg-slate-300 dark:bg-slate-700 group-hover:bg-blue-500'
                   }`}
                 />
               </button>

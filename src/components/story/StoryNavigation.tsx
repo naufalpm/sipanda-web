@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ChevronLeft, ChevronRight, Share2, Check } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { StrategicIndicator, IndicatorCategoryMeta } from '@/types/indicator';
 import { ThemeToggle } from '@/components/dashboard/ThemeToggle';
 
@@ -19,22 +19,12 @@ export function StoryNavigation({
   allIndicators,
   scrollProgress = 0
 }: StoryNavigationProps) {
-  const [copied, setCopied] = React.useState(false);
-
   const currentIndex = allIndicators.findIndex((i) => i.id === indicator.id || i.slug === indicator.slug);
   const prevIndicator = currentIndex > 0 ? allIndicators[currentIndex - 1] : null;
   const nextIndicator = currentIndex < allIndicators.length - 1 ? allIndicators[currentIndex + 1] : null;
 
   const currentNumberStr = String(currentIndex >= 0 ? currentIndex + 1 : 1).padStart(2, '0');
   const totalNumberStr = String(allIndicators.length).padStart(2, '0');
-
-  const handleShare = () => {
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
-  };
 
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-slate-800 transition-colors">
@@ -82,7 +72,7 @@ export function StoryNavigation({
           </p>
         </div>
 
-        {/* Right: Prev / Next Switcher & Actions */}
+        {/* Right: Prev / Next Switcher & Theme Toggle */}
         <div className="flex items-center gap-2">
           {/* Previous Story Button */}
           {prevIndicator ? (
@@ -115,16 +105,6 @@ export function StoryNavigation({
               <ChevronRight className="w-4 h-4" />
             </span>
           )}
-
-          {/* Share Button */}
-          <button
-            onClick={handleShare}
-            className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-colors relative"
-            title="Salin Tautan Halaman"
-            aria-label="Bagikan Indikator"
-          >
-            {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Share2 className="w-4 h-4" />}
-          </button>
 
           {/* Theme Toggle */}
           <ThemeToggle />

@@ -204,10 +204,10 @@ export function ThematicIllustration({
           {/* Subtle grid pattern */}
           <div className="absolute inset-0 bg-[radial-gradient(#8b5cf6_1px,transparent_1px)] [background-size:18px_18px] opacity-15" />
 
-          {/* Gini Ratio Illustration */}
+          {/* Rasio Gini Illustration */}
           <img
             src="/images/gini-ratio-illustration.png"
-            alt="Ilustrasi Gini Ratio dan Pemerataan Distribusi Pendapatan Masyarakat"
+            alt="Ilustrasi Rasio Gini dan Pemerataan Distribusi Pengeluaran Masyarakat"
             className="relative z-10 w-auto h-full max-h-[330px] object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-105"
           />
         </div>

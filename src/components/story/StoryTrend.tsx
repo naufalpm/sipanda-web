@@ -111,7 +111,7 @@ export function StoryTrend({ indicator }: StoryTrendProps) {
             <Activity className="w-5 h-5" />
           </div>
           <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-            Dinamika Historis & Tren Deret Waktu
+            Tren {indicator.name}
           </span>
         </div>
 
@@ -121,7 +121,7 @@ export function StoryTrend({ indicator }: StoryTrendProps) {
               Bagaimana Perubahannya dari Waktu ke Waktu?
             </h2>
             <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400 mt-2 font-medium">
-              Evolusi capaian {indicator.name} di Kabupaten Teluk Bintuni dalam kurun {totalYears} tahun terakhir ({firstPoint?.year}–{lastPoint?.year}).
+              Perubahan {indicator.name} di Kabupaten Teluk Bintuni dalam kurun {totalYears} tahun terakhir ({firstPoint?.year}–{lastPoint?.year}).
             </p>
           </div>
 
@@ -287,7 +287,7 @@ export function StoryTrend({ indicator }: StoryTrendProps) {
                 Tahun {selectedPoint.year}
               </span>
               <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">
-                Nilai Realisasi Tercatat: <strong className="text-blue-600 dark:text-blue-400 font-mono font-bold">{formatVal(selectedPoint.value)}</strong>
+                {indicator.name}: <strong className="text-blue-600 dark:text-blue-400 font-mono font-bold">{formatVal(selectedPoint.value)}</strong>
               </span>
             </div>
 
@@ -342,7 +342,7 @@ export function StoryTrend({ indicator }: StoryTrendProps) {
               {formatVal(lastPoint?.value)}
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Angka realisasi resmi rilis terbaru BPS Teluk Bintuni
+              {indicator.name} rilis terbaru BPS Kabupaten Teluk Bintuni
             </p>
           </div>
 

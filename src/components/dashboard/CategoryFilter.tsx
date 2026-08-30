@@ -76,7 +76,7 @@ export function CategoryFilter({
             type="text"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Cari indikator (misal: Kemiskinan, PDRB, TPAK, Gini Ratio)..."
+            placeholder="Cari indikator (misal: Kemiskinan, PDRB, TPAK, Rasio Gini)..."
             className="w-full pl-10 pr-9 py-2.5 text-sm bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 text-slate-900 dark:text-white placeholder-slate-400 transition-all duration-150"
           />
           {searchQuery && (

@@ -184,6 +184,112 @@ export const NAKER_PUBLICATIONS: Publication[] = [
   }
 ];
 
+export const PDRB_PUBLICATIONS: Publication[] = [
+  {
+    id: 'pub-pdrb-lapus-2021-2025',
+    title: 'Produk Domestik Regional Bruto Kabupaten Teluk Bintuni menurut Lapangan Usaha 2021-2025',
+    year: 2026,
+    publisher: 'BPS Kabupaten Teluk Bintuni',
+    catalogNumber: '9302021.9104',
+    publicationNumber: '91040.26004',
+    issnOrIsbn: '2686-4029',
+    frequency: 'Tahunan',
+    releaseDate: '6 April 2026',
+    language: 'Indonesia dan Inggris',
+    fileSize: '6.93 MB',
+    coverImage: '/images/cover-pdrb-2025.png',
+    coverGradient: 'from-emerald-700 via-teal-900 to-slate-950',
+    description: 'Publikasi resmi yang menyajikan tinjauan perkembangan perekonomian, struktur lapangan usaha, pertumbuhan riil, dan PDRB per kapita Kabupaten Teluk Bintuni 2021-2025.',
+    abstraction: 'Buku Produk Domestik Regional Bruto Kabupaten Teluk Bintuni menurut Lapangan Usaha Tahun 2021-2025 ini merupakan kelanjutan dari penerbitan tahun-tahun sebelumnya yang disusun oleh BPS Kabupaten Teluk Bintuni. Publikasi ini menyajikan tinjauan perkembangan perekonomian Kabupaten Teluk Bintuni secara deskriptif. Dalam buku ini juga ditampilkan tabel-tabel PDRB tahun 2021-2025 atas dasar harga berlaku dan harga konstan 2010 dalam bentuk nilai nominal dan persentase.',
+    pageCount: 126,
+    pdfUrl: '/documents/pdrb-kabupaten-teluk-bintuni-menurut-lapangan-usaha-2021-2025.pdf',
+    bpsUrl: 'https://telukbintunikab.bps.go.id/id/publication/2026/04/06/222ca15c8efa0db962dae705/produk-domestik-regional-bruto-kabupaten-teluk-bintuni-menurut-lapangan-usaha-2021-2025.html'
+  }
+];
+
+export const IPM_PUBLICATIONS: Publication[] = [
+  {
+    id: 'pub-ipm-2024',
+    title: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2024',
+    year: 2024,
+    publisher: 'BPS Kabupaten Teluk Bintuni',
+    catalogNumber: '4102002.9104',
+    publicationNumber: '91040.25032',
+    issnOrIsbn: '2089-6727',
+    frequency: 'Tahunan',
+    releaseDate: '30 Desember 2025',
+    language: 'Indonesia',
+    fileSize: '6.21 MB',
+    coverImage: '/images/cover-ipm-2024.png',
+    coverGradient: 'from-teal-800 via-cyan-900 to-slate-950',
+    description: 'Publikasi resmi tahunan BPS edisi kesepuluh yang menyajikan situasi pembangunan manusia, capaian IPM, serta komponen penyusunnya (UHH, HLS, RLS, dan pengeluaran per kapita disesuaikan).',
+    abstraction: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2024 merupakan publikasi tahunan Badan Pusat Statistik (BPS) yang telah dipublikasikan sejak tahun 2010 dan saat ini telah sampai edisi kesepuluh. Secara garis besar publikasi ini memberikan gambaran umum mengenai kondisi capaian pembangunan manusia di Kabupaten Teluk Bintuni tahun 2024. Adapun data dan informasi yang disajikan terdiri dari situasi pembangunan manusia di Kabupaten Teluk Bintuni, hasil penghitungan besaran IPM beserta indeks komponen-komponen penyusunnya serta perkembangannya, disparitas IPM antarwilayah, dan posisi absolut antarwilayah dalam pembangunan ekonomi dan pembangunan manusia secara simultan. Data dan informasi pembangunan manusia Kabupaten Teluk Bintuni yang tersaji dalam publikasi ini diharapkan dapat membantu pemerintah daerah, dunia usaha, dunia pendidikan, dan masyarakat dalam menyusun strategi dan mengupayakan pembangunan yang lebih baik dan berkelanjutan.',
+    pageCount: 52,
+    pdfUrl: '/documents/indeks-pembangunan-manusia-teluk-bintuni-2024.pdf',
+    bpsUrl: 'https://telukbintunikab.bps.go.id/id/publication/2025/12/30/9f1506797293a2c8991574c6/indeks-pembangunan-manusia-kabupaten-teluk-bintuni-2024.html'
+  },
+  {
+    id: 'pub-ipm-2023',
+    title: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2023',
+    year: 2023,
+    publisher: 'BPS Kabupaten Teluk Bintuni',
+    catalogNumber: '4102002.9104',
+    publicationNumber: '91040.24005',
+    issnOrIsbn: '2089-6727',
+    frequency: 'Tahunan',
+    releaseDate: '9 Agustus 2024',
+    language: 'Indonesia',
+    fileSize: '7.79 MB',
+    coverImage: '/images/cover-ipm-2023.png',
+    coverGradient: 'from-blue-800 via-indigo-900 to-slate-950',
+    description: 'Publikasi tahunan BPS edisi kesembilan yang menjelaskan tentang IPM dan menyajikan gambaran umum kondisi capaian pembangunan manusia di Teluk Bintuni tahun 2023.',
+    abstraction: 'Publikasi Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2023 ini merupakan publikasi tahunan Badan Pusat Statistik (BPS) Kabupaten Teluk Bintuni. Publikasi ini menjelaskan tentang Indeks Pembangunan Manusia (IPM) dan menyajikan gambaran umum kondisi pembangunan manusia di Kabupaten Teluk Bintuni tahun 2023. Adapun data dan informasi yang disajikan terdiri atas: kondisi pembangunan manusia di Kabupaten Teluk Bintuni, hasil penghitungan besaran IPM beserta komponen-komponen serta perkembangannya, disparitas IPM antarwilayah, dan posisi absolut antar wilayah dalam pembangunan ekonomi dan pembangunan manusia secara simultan.',
+    pageCount: 52,
+    pdfUrl: '/documents/indeks-pembangunan-manusia-teluk-bintuni-2023.pdf',
+    bpsUrl: 'https://telukbintunikab.bps.go.id/id/publication/2024/08/09/47d073da90851b8b614d0c8e/indeks-pembangunan-manusia-kabupaten-teluk-bintuni-2023.html'
+  },
+  {
+    id: 'pub-ipm-2022',
+    title: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2022',
+    year: 2022,
+    publisher: 'BPS Kabupaten Teluk Bintuni',
+    catalogNumber: '4102002.9104',
+    publicationNumber: '91040.2331',
+    issnOrIsbn: '2089-6727',
+    frequency: 'Tahunan',
+    releaseDate: '25 September 2023',
+    language: 'Indonesia',
+    fileSize: '3.19 MB',
+    coverImage: '/images/cover-ipm-2022.png',
+    coverGradient: 'from-cyan-800 via-teal-900 to-slate-950',
+    description: 'Publikasi tahunan BPS Kabupaten Teluk Bintuni yang menyajikan gambaran umum kondisi capaian pembangunan manusia di Teluk Bintuni tahun 2022.',
+    abstraction: 'Publikasi Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2022 ini merupakan publikasi tahunan Badan Pusat Statistik (BPS) Kabupaten Teluk Bintuni. Publikasi ini menjelaskan tentang Indeks Pembangunan Manusia (IPM) dan menyajikan gambaran umum kondisi pembangunan manusia di Kabupaten Teluk Bintuni tahun 2022. Adapun data dan informasi yang disajikan terdiri atas: kondisi pembangunan manusia di Kabupaten Teluk Bintuni, hasil penghitungan besaran IPM beserta komponen-komponen serta perkembangannya, disparitas IPM antarwilayah, dan posisi absolut antar wilayah dalam pembangunan ekonomi dan pembangunan manusia secara simultan.',
+    pageCount: 53,
+    pdfUrl: '/documents/indeks-pembangunan-manusia-teluk-bintuni-2022.pdf',
+    bpsUrl: 'https://telukbintunikab.bps.go.id/id/publication/2023/09/25/d03c72b7f527b2398c017af7/indeks-pembangunan-manusia-kabupaten-teluk-bintuni-2022.html'
+  },
+  {
+    id: 'pub-ipm-2021',
+    title: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2021',
+    year: 2021,
+    publisher: 'BPS Kabupaten Teluk Bintuni',
+    catalogNumber: '4102002.9104',
+    publicationNumber: '91040.2231',
+    issnOrIsbn: '2089-6727',
+    frequency: 'Tahunan',
+    releaseDate: '30 Desember 2022',
+    language: 'Indonesia',
+    fileSize: '3.68 MB',
+    coverImage: '/images/cover-ipm-2021.png',
+    coverGradient: 'from-blue-900 via-indigo-950 to-slate-950',
+    description: 'Publikasi tahunan BPS Kabupaten Teluk Bintuni yang menyajikan gambaran umum kondisi capaian pembangunan manusia di Teluk Bintuni tahun 2021.',
+    abstraction: 'Publikasi Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2021 ini merupakan publikasi tahunan Badan Pusat Statistik (BPS) Kabupaten Teluk Bintuni. Publikasi ini menjelaskan tentang Indeks Pembangunan Manusia (IPM) dan menyajikan gambaran umum kondisi pembangunan manusia di Kabupaten Teluk Bintuni tahun 2021. Adapun data dan informasi yang disajikan terdiri atas: kondisi pembangunan manusia di Kabupaten Teluk Bintuni, hasil penghitungan besaran IPM beserta komponen-komponen serta perkembangannya, disparitas IPM antarwilayah, dan posisi absolut antar wilayah dalam pembangunan ekonomi dan pembangunan manusia secara simultan.',
+    pageCount: 53,
+    pdfUrl: '/documents/indeks-pembangunan-manusia-teluk-bintuni-2021.pdf',
+    bpsUrl: 'https://telukbintunikab.bps.go.id/id/publication/2022/12/30/7ed669bfed518f181f5b4428/indeks-pembangunan-manusia-kabupaten-teluk-bintuni-2021.html'
+  }
+];
+
 export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentValue' | 'previousYear' | 'previousValue' | 'changeValue' | 'changePercent' | 'trendDirection' | 'isPositiveChange'>[] = [
   // 1. Angka Kemiskinan
   {
@@ -241,7 +347,7 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'Garis Kemiskinan',
     category: 'sosial',
     unit: 'Rupiah',
-    definition: 'Nilai pengeluaran minimum kebutuhan makanan (2.100 kkal per kapita per hari) dan non-makanan per kapita per bulan yang dibutuhkan seseorang agar tidak dikategorikan miskin.',
+    definition: 'Nilai rupiah pengeluaran minimum per kapita per bulan yang dibutuhkan seseorang untuk memenuhi kebutuhan pokok makanan (setara 2.100 kkal/hari) dan non-makanan.',
     polarity: 'neutral',
     featured: false,
     dataPoints: [
@@ -257,13 +363,13 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
       subtitle: 'Memahami Komponen Kebutuhan Pangan dan Non-Pangan Warga Bintuni',
       summaryQuote: 'Garis Kemiskinan mencerminkan nilai rupiah minimum pemenuhan nutrisi dan kebutuhan dasar per kapita per bulan.',
       paragraphs: [
-        'Garis Kemiskinan (GK) Kabupaten Teluk Bintuni pada tahun 2025 tercatat sebesar Rp 810.638 per kapita per bulan, meningkat Rp 76.392 dibanding tahun 2024.',
-        'Kenaikan garis kemiskinan dipengaruhi oleh pergerakan harga komoditas pokok seperti beras, ikan segar, telur ayam, serta biaya perumahan dan transportasi antardistrik.'
+        'Garis Kemiskinan (GK) Kabupaten Teluk Bintuni pada tahun 2025 tercatat sebesar Rp810.638 per kapita per bulan, meningkat Rp76.392 dibanding tahun 2024 (Rp734.246). Nilai ini merupakan yang tertinggi kedua di Provinsi Papua Barat setelah Kabupaten Manokwari.',
+        'Kenaikan nilai Garis Kemiskinan ini dipengaruhi oleh peningkatan harga komoditas pokok makanan (seperti beras, aneka ikan, telur, dan minyak) serta komoditas bukan makanan (seperti biaya perumahan dan aneka barang/jasa).'
       ],
       keyHighlights: [
         { label: 'GK 2025', value: 'Rp 810.638', description: 'Nilai garis kemiskinan per kapita/bulan' },
         { label: 'Kenaikan Nilai', value: '+Rp 76.392', description: 'Perubahan nominal dibanding 2024' },
-        { label: 'Komposisi', value: 'Pangan & Non-Pangan', description: 'Kebutuhan nutrisi 2.100 kkal & kebutuhan dasar' }
+        { label: 'Batas Rumah Tangga', value: 'Rp 3.242.552', description: 'Batas minimum per keluarga (asumsi 4 jiwa)' }
       ],
       policyContext: 'Pemantauan harga komoditas pangan pokok strategis dan intervensi stabilisasi pasokan menjaga keterjangkauan daya beli kelompok bawah.',
       humanScaleMeaning: {
@@ -288,7 +394,7 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'Pengangguran (TPT)',
     category: 'ketenagakerjaan',
     unit: '%',
-    definition: 'Persentase jumlah penganggur terhadap total jumlah angkatan kerja yang aktif mencari kerja atau mempersiapkan usaha.',
+    definition: 'Persentase jumlah pengangguran terhadap total angkatan kerja (penduduk usia kerja yang bekerja maupun sedang mencari kerja) di Kabupaten Teluk Bintuni.',
     polarity: 'lower_is_better',
     featured: true,
     dataPoints: [
@@ -300,16 +406,15 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     insightSnippet: 'TPT berhasil ditekan ke angka 3,16% pada 2024 seiring perluasan pelatihan vokasi di Pusat Pelatihan Teknik Industri Migas (P2TIM) Bintuni.',
     story: {
       title: 'Peluang Kerja dan Penyerapan Tenaga Kerja Lokal',
-      subtitle: 'Pemberdayaan Tenaga Kerja Muda Melalui Pelatihan Vokasi Berstandar Industri',
-      summaryQuote: 'Penurunan TPT ke 3,16% membuktikan keberhasilan transfer keahlian bagi tenaga kerja muda daerah untuk diserap di sektor industri dan jasa.',
+      summaryQuote: 'Tingkat Pengangguran Terbuka menurun menjadi 3,16%, mencerminkan daya serap pasar kerja yang baik di Kabupaten Teluk Bintuni.',
       paragraphs: [
-        'Tingkat Pengangguran Terbuka (TPT) Kabupaten Teluk Bintuni pada tahun 2024 tercatat sebesar 3,16 persen, menurun 0,36 persen poin dari 3,52 persen pada tahun 2023.',
-        'Penguatan pelatihan teknik vokasi melalui P2TIM Teluk Bintuni telah membekali tenaga kerja lokal dengan sertifikasi keahlian industri berskala nasional dan internasional.'
+        'Pada tahun 2024, Tingkat Pengangguran Terbuka (TPT) Kabupaten Teluk Bintuni tercatat sebesar 3,16%, turun 0,36 %-poin dari 3,52% pada tahun 2023.',
+        'Penurunan ini menunjukkan membaiknya serapan tenaga kerja di berbagai sektor ekonomi, khususnya sektor jasa yang menjadi penopang utama penyerapan tenaga kerja di Kabupaten Teluk Bintuni.'
       ],
       keyHighlights: [
         { label: 'Realisasi TPT 2024', value: '3,16 %', description: 'Persentase penganggur dari angkatan kerja' },
         { label: 'Penurunan Tahunan', value: '-0,36 %', description: 'Penurunan dibanding tahun 2023' },
-        { label: 'Inisiatif Unggulan', value: 'P2TIM Bintuni', description: 'Pelatihan vokasi industri migas gratis bersertifikasi' }
+        { label: 'Sektor Utama', value: 'Sektor Jasa', description: 'Penopang utama serapan tenaga kerja' }
       ],
       policyContext: 'Pengembangan kurikulum link & match antara kebutuhan industri migas dan pelatihan vokasi daerah mempercepat absorpsi pencari kerja.',
       humanScaleMeaning: {
@@ -334,7 +439,7 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'TPAK',
     category: 'ketenagakerjaan',
     unit: '%',
-    definition: 'Persentase jumlah angkatan kerja (bekerja dan mencari kerja) terhadap penduduk usia kerja (15 tahun ke atas).',
+    definition: 'Persentase penduduk usia kerja (15 tahun ke atas) yang termasuk dalam angkatan kerja di Kabupaten Teluk Bintuni.',
     polarity: 'higher_is_better',
     featured: false,
     dataPoints: [
@@ -346,16 +451,15 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     insightSnippet: 'TPAK Teluk Bintuni naik menjadi 70,07% pada 2024, menandakan tingginya partisipasi dan keaktifan masyarakat dalam pasar kerja.',
     story: {
       title: 'Dinamika Partisipasi Angkatan Kerja Produktif',
-      subtitle: 'Meningkatnya Keterlibatan Masyarakat Usia Produktif dalam Kegiatan Ekonomi',
-      summaryQuote: 'Kenaikan TPAK mencapai 70,07% menandakan tingginya keaktifan penduduk usia kerja dalam menggerakkan perekonomian daerah.',
+      summaryQuote: 'TPAK Kabupaten Teluk Bintuni tahun 2024 sebesar 70,07%, mengindikasikan bahwa sekitar 70 dari setiap 100 penduduk usia kerja aktif di pasar kerja.',
       paragraphs: [
-        'Tingkat Partisipasi Angkatan Kerja (TPAK) Kabupaten Teluk Bintuni pada tahun 2024 mencapai 70,07 persen, meningkat 0,74 persen poin dibanding tahun 2023 (69,33 persen).',
-        'Peningkatan ini didorong oleh semakin banyaknya angkatan kerja muda dan perempuan yang terserap dalam aktivitas ekonomi produktif, perikanan maritim, perkebunan, dan sektor perdagangan.'
+        'Tingkat Partisipasi Angkatan Kerja (TPAK) Kabupaten Teluk Bintuni pada periode Agustus 2024 tercatat sebesar 70,07%, meningkat 0,74 %-poin dibandingkan keadaan Agustus 2023 (69,33%).',
+        'Partisipasi tenaga kerja laki-laki tercatat sebesar 81,70%, lebih tinggi dibanding perempuan (52,87%). Meskipun demikian, partisipasi kerja perempuan mengalami kenaikan dari 50,03% pada tahun 2023 menjadi 52,87% pada tahun 2024.'
       ],
       keyHighlights: [
         { label: 'TPAK 2024', value: '70,07 %', description: 'Persentase angkatan kerja dari usia kerja' },
         { label: 'Kenaikan Tahunan', value: '+0,74 %', description: 'Peningkatan dibanding tahun 2023' },
-        { label: 'Dampak Positif', value: 'Ekspansi Pasar Kerja', description: 'Peningkatan partisipasi perempuan & pemuda' }
+        { label: 'Menurut Gender', value: '81,70% | 52,87%', description: 'TPAK Laki-laki (81,70%) & Perempuan (52,87%)' }
       ],
       policyContext: 'Pemberdayaan UMKM lokal dan optimalisasi pelatihan vokasi industri meningkatkan partisipasi angkatan kerja produktif.',
       humanScaleMeaning: {
@@ -380,7 +484,7 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'Pertumbuhan Ekonomi',
     category: 'ekonomi',
     unit: '%',
-    definition: 'Laju pertumbuhan Produk Domestik Regional Bruto (PDRB) atas dasar harga konstan yang menggambarkan percepatan produksi barang dan jasa.',
+    definition: 'Laju pertumbuhan Produk Domestik Regional Bruto (PDRB) atas dasar harga konstan yang menggambarkan pertambahan volume produksi barang dan jasa di Kabupaten Teluk Bintuni.',
     polarity: 'higher_is_better',
     featured: true,
     dataPoints: [
@@ -390,61 +494,31 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
       { year: 2024, value: 29.22 },
       { year: 2025, value: 7.92 }
     ],
-    insightSnippet: 'Ekonomi Teluk Bintuni tumbuh 7,92% pada 2025, ditopang oleh stabilitas industri pengolahan migas, konstruksi, dan perikanan tangkap.',
+    insightSnippet: 'Ekonomi Kabupaten Teluk Bintuni tumbuh 7,92% pada 2025, didorong oleh pertumbuhan Industri Pengolahan (9,50%) serta Pertambangan dan Penggalian (6,75%).',
     story: {
-      title: 'Akselerasi Ekonomi di Jantung Energi Papua Barat',
-      subtitle: 'Sektor Industri Pengolahan Migas dan Maritim Mendorong Pertumbuhan Kuat',
-      summaryQuote: 'Pertumbuhan ekonomi 7,92% menegaskan posisi Teluk Bintuni sebagai motor utama penggerak perekonomian di Papua Barat.',
+      title: 'Dinamika Pertumbuhan Ekonomi Riil Daerah',
+      summaryQuote: 'Perekonomian Kabupaten Teluk Bintuni tahun 2025 mencatat pertumbuhan positif sebesar 7,92 persen, murni didorong peningkatan produksi riil barang dan jasa.',
       paragraphs: [
-        'Perekonomian Kabupaten Teluk Bintuni pada tahun 2025 tumbuh sebesar 7,92 persen, setelah pada tahun 2024 mengalami lonjakan signifikan sebesar 29,22 persen akibat ekspansi fasilitas produksi gas alam cair.',
-        'Sektor industri pengolahan gas alam cair (LNG), konstruksi, serta perikanan maritim tetap menjadi pilar utama pertumbuhan volume produksi riil daerah.'
+        'Pada tahun 2025, nilai PDRB Kabupaten Teluk Bintuni atas dasar harga konstan 2010 mencapai Rp 37,80 triliun, meningkat dari Rp 35,03 triliun pada tahun 2024 atau mengalami pertumbuhan ekonomi sebesar 7,92 persen.',
+        'Pertumbuhan ekonomi tertinggi dicapai oleh lapangan usaha Industri Pengolahan yaitu sebesar 9,50 persen seiring peningkatan kapasitas produksi Train 3 LNG Tangguh yang beroperasi penuh sejak April 2024, disusul lapangan usaha Pertambangan dan Penggalian sebesar 6,75 persen.'
       ],
       keyHighlights: [
-        { label: 'Laju 2025', value: '7,92 %', description: 'Pertumbuhan riil PDRB ADHK' },
-        { label: 'Puncak 2024', value: '29,22 %', description: 'Lonjakan ekspansi fasilitas LNG' },
-        { label: 'Sektor Penopang', value: 'Industri Pengolahan', description: 'Kontributor utama nilai tambah ekonomi' }
+        { label: 'Pertumbuhan 2025', value: '7,92 %', description: 'Laju pertumbuhan riil PDRB ADHK' },
+        { label: 'Tahun 2024', value: '29,22 %', description: 'Lonjakan operasional awal Train 3' },
+        { label: 'Sektor Utama', value: 'Industri Pengolahan', description: 'Tumbuh tertinggi 9,50% (LNG Tangguh)' }
       ],
-      policyContext: 'Hilirisasi gas alam dan pengembangan kawasan industri terpadu menjadi fondasi jangka panjang penguatan struktur ekonomi daerah.',
+      policyContext: 'Struktur ekonomi Teluk Bintuni didominasi Industri Pengolahan serta Pertambangan dan Penggalian yang menyumbang 92,45 persen dari total PDRB.',
       humanScaleMeaning: {
-        ratioText: 'Laju Ekspansi +7,92% per Tahun',
+        ratioText: 'Laju Pertumbuhan Riil +7,92%',
         numerator: 8,
         denominator: 100,
-        description: 'Nilai total barang dan jasa riil yang diproduksi di Kabupaten Teluk Bintuni meningkat 7,92% dibanding tahun sebelumnya.',
-        contextNote: 'Pertumbuhan dihitung atas dasar harga konstan (ADHK) guna mengukur peningkatan volume output riil murni tanpa pengaruh inflasi harga.'
+        description: 'Volume total barang dan jasa yang diproduksi di Kabupaten Teluk Bintuni selama tahun 2025 meningkat 7,92% dibandingkan tahun 2024.',
+        contextNote: 'Pertumbuhan dihitung atas dasar harga konstan 2010 (ADHK) guna mengukur peningkatan volume output riil murni tanpa pengaruh inflasi harga.'
       }
     },
-    publications: [
-      {
-        id: 'pub-pdrb-lapus-2024',
-        title: 'Produk Domestik Regional Bruto Kabupaten Teluk Bintuni Menurut Lapangan Usaha 2020-2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '5201001.9104',
-        publicationNumber: '91040.2405',
-        releaseDate: '28 Februari 2025',
-        coverGradient: 'from-emerald-600 via-teal-700 to-slate-900',
-        description: 'Publikasi resmi neraca ekonomi wilayah memuat laju pertumbuhan ekonomi sektoral dan kontribusi struktur PDRB Teluk Bintuni.',
-        pageCount: 168,
-        pdfUrl: '#download-pdrb-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      },
-      {
-        id: 'pub-pdrb-pengeluaran-2024',
-        title: 'PDRB Kabupaten Teluk Bintuni Menurut Pengeluaran 2020-2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '5202001.9104',
-        publicationNumber: '91040.2408',
-        releaseDate: '15 Maret 2025',
-        coverGradient: 'from-blue-600 via-cyan-700 to-slate-900',
-        description: 'Ulasan agregat konsumsi rumah tangga, investasi (PMTB), dan kinerja ekspor neto daerah Teluk Bintuni.',
-        pageCount: 124,
-        pdfUrl: '#download-pengeluaran-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      }
-    ],
+    publications: PDRB_PUBLICATIONS,
     source: 'PDRB Menurut Lapangan Usaha - BPS Kabupaten Teluk Bintuni',
-    updatedAt: 'Februari 2025'
+    updatedAt: 'April 2026'
   },
 
   // 6. PDRB Tahunan
@@ -456,7 +530,7 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'PDRB Tahunan',
     category: 'ekonomi',
     unit: 'Triliun Rupiah',
-    definition: 'Nilai total Produk Domestik Regional Bruto atas dasar harga berlaku yang dihasilkan oleh seluruh lapangan usaha dalam satu tahun.',
+    definition: 'Nilai tambah bruto seluruh barang dan jasa yang dihasilkan di wilayah Kabupaten Teluk Bintuni atas dasar harga berlaku pada periode satu tahun untuk menggambarkan kemampuan sumber daya dan struktur ekonomi daerah.',
     polarity: 'higher_is_better',
     featured: false,
     dataPoints: [
@@ -466,61 +540,31 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
       { year: 2024, value: 52.36 },
       { year: 2025, value: 57.21 }
     ],
-    insightSnippet: 'PDRB Tahunan atas dasar harga berlaku menembus Rp 57,21 Triliun pada 2025, mencerminkan skala kue ekonomi Teluk Bintuni yang terus berekspansi.',
+    insightSnippet: 'PDRB Teluk Bintuni atas dasar harga berlaku mencapai Rp 57,21 triliun pada tahun 2025, didominasi oleh Industri Pengolahan dan Pertambangan (92,45%).',
     story: {
-      title: 'Skala dan Kapasitas Ekonomi Daerah Bintuni',
-      subtitle: 'Penciptaan Nilai Tambah Bruto Barang dan Jasa Sepanjang Tahun',
-      summaryQuote: 'PDRB Tahunan mencapai Rp 57,21 Triliun (ADHB) dan Rp 37,80 Triliun (ADHK), merefleksikan peran vital Teluk Bintuni dalam output ekonomi regional Papua.',
+      title: 'Penciptaan Nilai Tambah dan Struktur PDRB Daerah',
+      summaryQuote: 'Nilai PDRB Teluk Bintuni atas dasar harga berlaku pada tahun 2025 mencapai Rp 57,21 triliun, meningkat Rp 4,85 triliun dibandingkan tahun 2024.',
       paragraphs: [
-        'Total PDRB atas dasar harga berlaku (ADHB) Kabupaten Teluk Bintuni pada tahun 2025 mencapai Rp 57,21 Triliun, meningkat dari Rp 52,36 Triliun pada tahun 2024.',
-        'Secara riil atas dasar harga konstan 2010 (ADHK), output ekonomi mencapai Rp 37,80 Triliun pada tahun 2025, tumbuh dari Rp 35,03 Triliun pada tahun 2024 seiring tingginya produksi komoditas gas alam cair dan aktivitas industri pengolahan.'
+        'Nilai PDRB Kabupaten Teluk Bintuni atas dasar harga berlaku (ADHB) pada tahun 2025 mencapai Rp 57,21 triliun, meningkat sebesar Rp 4,85 triliun dibandingkan tahun 2024 yang mencapai Rp 52,36 triliun. Peningkatan nilai PDRB ini dipengaruhi oleh meningkatnya harga di tingkat produsen pada sebagian besar lapangan usaha.',
+        'Struktur perekonomian Teluk Bintuni didominasi oleh dua kategori lapangan usaha utama, yaitu Industri Pengolahan dengan kontribusi sebesar 56,28 persen serta Pertambangan dan Penggalian sebesar 36,17 persen, yang secara akumulatif menyumbang 92,45 persen terhadap total PDRB daerah.'
       ],
       keyHighlights: [
-        { label: 'PDRB ADHB 2025', value: 'Rp 57,21 T', description: 'Nilai total nominal harga berlaku' },
-        { label: 'PDRB ADHK 2025', value: 'Rp 37,80 T', description: 'Nilai riil volume produksi (konstan 2010)' },
-        { label: 'Kenaikan Nilai', value: '+Rp 4,85 T', description: 'Peningkatan nominal dibanding 2024' }
+        { label: 'PDRB ADHB 2025', value: 'Rp 57,21 T', description: 'Nilai nominal atas dasar harga berlaku' },
+        { label: 'PDRB ADHK 2025', value: 'Rp 37,80 T', description: 'Nilai riil volume atas harga konstan 2010' },
+        { label: 'Kenaikan Nominal', value: '+Rp 4,85 T', description: 'Peningkatan dibanding tahun 2024 (Rp 52,36 T)' }
       ],
-      policyContext: 'Peningkatan nilai tambah dan diversifikasi sektor ekonomi non-migas terus didorong untuk ketahanan ekonomi jangka panjang.',
+      policyContext: 'Dua kategori lapangan usaha (Industri Pengolahan dan Pertambangan) menjadi penopang utama pembentukan 92,45 persen PDRB Kabupaten Teluk Bintuni.',
       humanScaleMeaning: {
-        ratioText: 'Skala Ekonomi Rp 57,21 Triliun',
+        ratioText: 'Total Output Rp 57,21 Triliun',
         numerator: 57,
         denominator: 100,
-        description: 'Total nilai bruto seluruh barang dan jasa yang dihasilkan seluruh sektor usaha di Kabupaten Teluk Bintuni dalam setahun mencapai Rp 57,21 Triliun (ADHB) dan Rp 37,80 Triliun (ADHK).',
-        contextNote: 'PDRB ADHB mengukur nilai pasar tahun berjalan, sedangkan PDRB ADHK mengukur volume riil output ekonomi tanpa pengaruh inflasi harga.'
+        description: 'Nilai bruto seluruh barang dan jasa yang dihasilkan di Kabupaten Teluk Bintuni pada tahun 2025 mencapai Rp 57,21 triliun atas dasar harga berlaku (ADHB) dan Rp 37,80 triliun atas dasar harga konstan 2010 (ADHK).',
+        contextNote: 'PDRB ADHB menunjukkan kemampuan sumber daya ekonomi dan struktur pasar berjalan, sedangkan PDRB ADHK mengukur volume fisik riil output tanpa pengaruh inflasi.'
       }
     },
-    publications: [
-      {
-        id: 'pub-pdrb-adhb-2024',
-        title: 'Produk Domestik Regional Bruto Kabupaten Teluk Bintuni Menurut Lapangan Usaha 2020-2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '5201001.9104',
-        publicationNumber: '91040.2405',
-        releaseDate: '28 Februari 2025',
-        coverGradient: 'from-blue-600 via-indigo-700 to-slate-900',
-        description: 'Menyajikan tabel dan analisis rinci struktur nilai tambah bruto 17 lapangan usaha di Kabupaten Teluk Bintuni.',
-        pageCount: 168,
-        pdfUrl: '#download-pdrb-adhb-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      },
-      {
-        id: 'pub-bda-pdrb-2024',
-        title: 'Kabupaten Teluk Bintuni Dalam Angka 2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '1102001.9104',
-        publicationNumber: '91040.2401',
-        releaseDate: '28 Februari 2024',
-        coverGradient: 'from-cyan-600 via-teal-700 to-slate-900',
-        description: 'Publikasi tahunan komprehensif yang memuat ringkasan neraca ekonomi regional dan indikator makro daerah.',
-        pageCount: 382,
-        pdfUrl: '#download-bda-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      }
-    ],
+    publications: PDRB_PUBLICATIONS,
     source: 'PDRB Menurut Lapangan Usaha - BPS Kabupaten Teluk Bintuni',
-    updatedAt: 'Februari 2025'
+    updatedAt: 'April 2026'
   },
 
   // 7. PDRB Per Kapita
@@ -532,7 +576,7 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'PDRB Per Kapita',
     category: 'ekonomi',
     unit: 'Juta Rp',
-    definition: 'Nilai PDRB atas dasar harga berlaku dibagi dengan jumlah penduduk pertengahan tahun, menggambarkan rata-rata nilai output per jiwa.',
+    definition: 'Hasil bagi antara Produk Domestik Regional Bruto (PDRB) atas dasar harga berlaku dengan jumlah penduduk pertengahan tahun, menggambarkan nilai PDRB per satu orang penduduk di Kabupaten Teluk Bintuni.',
     polarity: 'higher_is_better',
     featured: false,
     dataPoints: [
@@ -542,61 +586,31 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
       { year: 2024, value: 574.98 },
       { year: 2025, value: 621.84 }
     ],
-    insightSnippet: 'PDRB per kapita Teluk Bintuni mencapai Rp 621,84 Juta/orang/tahun pada 2025, mencerminkan tingginya produktivitas sektor industri pengolahan migas daerah.',
+    insightSnippet: 'PDRB per kapita Teluk Bintuni mencapai Rp 621,84 juta/tahun pada 2025, mencerminkan tingginya nilai tambah ekonomi berbasis SDA dan migas terhadap jumlah penduduk.',
     story: {
-      title: 'Tingkat Produktivitas dan Output Ekonomi per Jiwa',
-      subtitle: 'Kekayaan Sumber Daya Alam dan Kapasitas Produksi per Kapita yang Tinggi',
-      summaryQuote: 'PDRB per kapita Rp 621,84 Juta/tahun mencerminkan kapasitas nilai tambah ekonomi makro yang sangat tinggi di kawasan Teluk Bintuni.',
+      title: 'PDRB Per Kapita dan Rata-rata Output per Jiwa',
+      summaryQuote: 'PDRB per kapita Kabupaten Teluk Bintuni atas dasar harga berlaku pada tahun 2025 mencapai Rp 621,84 juta per tahun, terus meningkat dari tahun ke tahun.',
       paragraphs: [
-        'PDRB per kapita atas dasar harga berlaku di Kabupaten Teluk Bintuni pada tahun 2025 mencapai Rp 621,84 Juta per orang per tahun, meningkat dari Rp 574,98 Juta pada tahun 2024.',
-        'Tingginya angka ini merefleksikan besarnya kontribusi industri pengolahan gas alam cair (LNG) berskala global terhadap pembentukan nilai tambah regional berbanding dengan jumlah penduduk.'
+        'Nilai PDRB per kapita Kabupaten Teluk Bintuni atas dasar harga berlaku sejak tahun 2021 hingga 2025 cenderung meningkat dari tahun ke tahun. Pada tahun 2021 tercatat sebesar Rp 356,17 juta, meningkat menjadi Rp 392,07 juta pada tahun 2022, kemudian naik menjadi Rp 438,85 juta pada tahun 2023, Rp 574,98 juta pada tahun 2024, dan pada tahun 2025 mencapai Rp 621,84 juta per kapita per tahun.',
+        'Besar kecilnya nilai PDRB per kapita sangat dipengaruhi oleh jumlah penduduk pertengahan tahun (91.009 jiwa pada tahun 2025) serta potensi sumber daya alam dan dominasi sektor industri pengolahan migas di Kabupaten Teluk Bintuni.'
       ],
       keyHighlights: [
-        { label: 'PDRB per Kapita 2025', value: 'Rp 621,84 Juta', description: 'Nilai output rata-rata per orang/tahun' },
-        { label: 'Setara Bulanan', value: 'Rp 51,82 Juta', description: 'Rata-rata output per jiwa/bulan' },
-        { label: 'Kenaikan Nilai', value: '+Rp 46,86 Juta', description: 'Peningkatan dibanding tahun 2024' }
+        { label: 'PDRB per Kapita 2025', value: 'Rp 621,84 Juta', description: 'Atas dasar harga berlaku (ADHB) per tahun' },
+        { label: 'Harga Konstan (ADHK)', value: 'Rp 410,86 Juta', description: 'Nilai riil per kapita (tumbuh +6,81%)' },
+        { label: 'Kenaikan Nominal', value: '+Rp 46,86 Juta', description: 'Peningkatan dibanding tahun 2024 (Rp 574,98 Juta)' }
       ],
-      policyContext: 'Tingginya produktivitas per kapita diarahkan untuk mempercepat pemerataan pembangunan infrastruktur dasar antardistrik.',
+      policyContext: 'Tingginya PDRB per kapita didorong oleh nilai tambah industri pengolahan migas berskala besar berbanding jumlah penduduk pertengahan tahun sebesar 91.009 jiwa.',
       humanScaleMeaning: {
         ratioText: 'Rata-rata Rp 621,84 Juta / Orang / Tahun',
         numerator: 62,
         denominator: 100,
-        description: 'Jika seluruh nilai bruto barang dan jasa yang dihasilkan dibagi rata ke seluruh penduduk Teluk Bintuni, rata-rata output per orang mencapai Rp 621,84 Juta setahun (setara ~Rp 51,82 Juta/bulan).',
-        contextNote: 'PDRB per kapita merupakan ukuran produktivitas output makro wilayah, bukan pendapatan riil perorangan rumah tangga.'
+        description: 'Jika seluruh nilai tambah bruto yang dihasilkan seluruh lapangan usaha di Kabupaten Teluk Bintuni dibagi rata dengan jumlah penduduk (91.009 jiwa), rata-rata output ekonomi mencapai Rp 621,84 juta per orang dalam setahun (setara ~Rp 51,82 juta/bulan).',
+        contextNote: 'PDRB per kapita merupakan indikator makro pembagian output wilayah terhadap penduduk, bukan pendapatan riil perorangan yang diterima masing-masing rumah tangga.'
       }
     },
-    publications: [
-      {
-        id: 'pub-pdrb-kapita-2024',
-        title: 'Produk Domestik Regional Bruto Kabupaten Teluk Bintuni Menurut Lapangan Usaha 2020-2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '5201001.9104',
-        publicationNumber: '91040.2405',
-        releaseDate: '28 Februari 2025',
-        coverGradient: 'from-teal-600 via-emerald-700 to-slate-900',
-        description: 'Menyajikan indikator agregat PDRB per kapita dan dinamika perbandingan antarwilayah kabupaten/kota di Papua Barat.',
-        pageCount: 168,
-        pdfUrl: '#download-pdrb-kapita-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      },
-      {
-        id: 'pub-bda-kapita-2024',
-        title: 'Kabupaten Teluk Bintuni Dalam Angka 2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '1102001.9104',
-        publicationNumber: '91040.2401',
-        releaseDate: '28 Februari 2024',
-        coverGradient: 'from-cyan-600 via-teal-700 to-slate-900',
-        description: 'Statistik kependudukan, ketenagakerjaan, dan output ekonomi per kapita tahunan.',
-        pageCount: 382,
-        pdfUrl: '#download-bda-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      }
-    ],
+    publications: PDRB_PUBLICATIONS,
     source: 'PDRB Menurut Lapangan Usaha - BPS Kabupaten Teluk Bintuni',
-    updatedAt: 'Februari 2025'
+    updatedAt: 'April 2026'
   },
 
   // 8. Angka Harapan Hidup
@@ -608,89 +622,53 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
     shortName: 'Angka Harapan Hidup',
     category: 'kesehatan',
     unit: 'Tahun',
-    definition: 'Rata-rata perkiraan banyak tahun yang dapat ditempuh oleh seseorang sejak lahir dengan asumsi tidak ada perubahan pola mortalitas menurut umur.',
+    definition: 'Rata-rata perkiraan banyak tahun yang dapat ditempuh oleh seseorang selama hidup sejak lahir, yang mencerminkan derajat kesehatan dan kualitas hidup masyarakat di suatu wilayah.',
     polarity: 'higher_is_better',
     featured: true,
     dataPoints: [
+      { year: 2020, value: 66.86 },
       { year: 2021, value: 67.01 },
       { year: 2022, value: 67.38 },
       { year: 2023, value: 67.75 },
-      { year: 2024, value: 68.05 },
-      { year: 2025, value: 68.49 }
+      { year: 2024, value: 68.05 }
     ],
-    insightSnippet: 'Angka Harapan Hidup meningkat menjadi 68,49 tahun pada 2025, didukung oleh perbaikan layanan kesehatan ibu-anak dan pengendalian penyakit menular.',
+    insightSnippet: 'Umur Harapan Hidup saat lahir Kabupaten Teluk Bintuni mencapai 68,05 tahun pada 2024, mencatatkan laju pertumbuhan tertinggi di Provinsi Papua Barat (+0,44%).',
     story: {
-      title: 'Membangun Generasi Sehat, Menambah Usia Harapan',
-      subtitle: 'Peningkatan Akses Layanan Kesehatan Dasar dan Derajat Hidup Warga',
-      summaryQuote: 'Kenaikan AHH menjadi 68,49 tahun membuktikan perbaikan berkesinambungan fasilitas kesehatan dan sanitasi lingkungan masyarakat.',
+      title: 'Capaian Dimensi Umur Panjang dan Hidup Sehat',
+      summaryQuote: 'Umur Harapan Hidup saat lahir di Kabupaten Teluk Bintuni mencapai 68,05 tahun pada tahun 2024, tumbuh 0,44 persen dan merupakan pertumbuhan tertinggi di Provinsi Papua Barat.',
       paragraphs: [
-        'Angka Harapan Hidup saat Lahir (AHH) di Kabupaten Teluk Bintuni terus mengalami tren peningkatan dan mencapai 68,49 tahun pada tahun 2025.',
-        'Inovasi layanan kesehatan seperti Puskesmas Keliling Perairan dan program pengendalian malaria terbukti menurunkan angka kematian bayi serta memperpanjang usia harapan hidup masyarakat.'
+        'Guna menghitung dimensi umur panjang dan hidup sehat dalam IPM, digunakan indikator Umur Harapan Hidup (UHH) saat lahir hasil Long Form SP2020. Pada tahun 2024, UHH Kabupaten Teluk Bintuni mencapai 68,05 tahun, meningkat sebesar 0,30 tahun dibandingkan tahun 2023 (67,75 tahun). Ini menunjukkan bahwa bayi baru lahir di Kabupaten Teluk Bintuni diperkirakan dapat bertahan hidup hingga usia 68 sampai 69 tahun.',
+        'Laju pertumbuhan Umur Harapan Hidup Kabupaten Teluk Bintuni pada tahun 2024 tumbuh sebesar 0,44 persen, menempati peringkat pertumbuhan tertinggi di antara seluruh kabupaten/kota se-Provinsi Papua Barat. Peningkatan ini didorong oleh semakin luasnya sebaran sarana prasarana kesehatan, kemudahan akses medis, serta meningkatnya kepedulian masyarakat terhadap pola hidup bersih dan sehat (PHBS).'
       ],
       keyHighlights: [
-        { label: 'AHH 2025', value: '68,49 Tahun', description: 'Perkiraan usia hidup bayi baru lahir' },
-        { label: 'Kenaikan Tahunan', value: '+0,44 Tahun', description: 'Peningkatan usia harapan dibanding 2024' },
-        { label: 'Inovasi Unggulan', value: 'EDAT & Puskesmas Keliling', description: 'Akses medis terjangkau di pesisir & rawa' }
+        { label: 'UHH Saat Lahir 2024', value: '68,05 Tahun', description: 'Perkiraan usia hidup bayi baru lahir' },
+        { label: 'Laju Pertumbuhan', value: '+0,44%', description: 'Pertumbuhan tertinggi se-Papua Barat' },
+        { label: 'Kenaikan Tahunan', value: '+0,30 Tahun', description: 'Meningkat dari 67,75 tahun pada 2023' }
       ],
-      policyContext: 'Penguatan layanan gizi ibu-anak dan intervensi deteksi dini penyakit menular terus memperkuat dimensi umur panjang dan hidup sehat.',
+      policyContext: 'Pemerataan sebaran sarana-prasarana kesehatan, kemudahan akses menuju fasilitas medis, sosialisasi gizi seimbang, dan cakupan vaksinasi menjadi prioritas utama pembangunan kesehatan daerah.',
       humanScaleMeaning: {
-        ratioText: 'Rata-rata Harapan Hidup 68,49 Tahun',
+        ratioText: 'Rata-rata Harapan Hidup 68,05 Tahun',
         numerator: 68,
-        denominator: 100,
-        description: 'Bayi yang baru lahir di Kabupaten Teluk Bintuni pada tahun 2025 memiliki perkiraan peluang bertahan hidup hingga usia 68,49 tahun.',
-        contextNote: 'Angka Harapan Hidup merupakan cerminan derajat kesehatan masyarakat, penurunan angka kematian bayi, dan akses fasilitas medis dasar.'
+        denominator: 85,
+        description: 'Seorang bayi yang baru lahir di Kabupaten Teluk Bintuni pada tahun 2024 diperkirakan memiliki peluang bertahan hidup rata-rata hingga usia 68 sampai 69 tahun.',
+        contextNote: 'Umur Harapan Hidup saat lahir (UHH) merefleksikan derajat kesehatan masyarakat secara umum, ketersediaan tenaga medis, serta penurunan angka kematian bayi.'
       }
     },
-    publications: [
-      {
-        id: 'pub-ipm-ahh-2024',
-        title: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '4102002.9104',
-        publicationNumber: '91040.25034',
-        issnOrIsbn: '2089-6727',
-        frequency: 'Tahunan',
-        releaseDate: 'Desember 2025',
-        language: 'Indonesia',
-        fileSize: '6.5 MB',
-        coverImage: '/images/cover-ipm-2024.png',
-        coverGradient: 'from-blue-700 via-indigo-900 to-slate-950',
-        description: 'Publikasi resmi evaluasi IPM mencakup dimensi umur panjang & hidup sehat (AHH), pengetahuan (HLS & RLS), serta standar hidup layak di Teluk Bintuni.',
-        abstraction: 'Indeks Pembangunan Manusia Kabupaten Teluk Bintuni 2024 merupakan publikasi tahunan Badan Pusat Statistik (BPS) edisi kesepuluh yang memberikan gambaran umum mengenai capaian pembangunan manusia di Kabupaten Teluk Bintuni tahun 2024, mencakup situasi pembangunan manusia, hasil penghitungan besaran IPM beserta indeks komponen penyusunnya (UHH, HLS, RLS, dan pengeluaran riil per kapita), serta disparitas IPM antarwilayah.',
-        pageCount: 70,
-        pdfUrl: '/documents/indeks-pembangunan-manusia-teluk-bintuni-2024.pdf',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      },
-      {
-        id: 'pub-bda-ahh-2024',
-        title: 'Kabupaten Teluk Bintuni Dalam Angka 2024',
-        year: 2024,
-        publisher: 'BPS Kabupaten Teluk Bintuni',
-        catalogNumber: '1102001.9104',
-        publicationNumber: '91040.2401',
-        releaseDate: '28 Februari 2024',
-        coverGradient: 'from-cyan-600 via-teal-700 to-slate-900',
-        description: 'Statistik kesehatan, jumlah tenaga medis, fasilitas puskesmas/rumah sakit, dan capaian indikator mortalitas anak.',
-        pageCount: 382,
-        pdfUrl: '#download-bda-2024',
-        bpsUrl: 'https://telukbintunikab.bps.go.id'
-      }
-    ],
+    publications: IPM_PUBLICATIONS,
     source: 'Indeks Pembangunan Manusia - BPS Kabupaten Teluk Bintuni',
-    updatedAt: 'Desember 2024'
+    updatedAt: 'Desember 2025'
   },
 
-  // 9. Gini Ratio
+  // 9. Rasio Gini
   {
     id: 'gini-ratio',
     code: 'GINI',
     slug: 'gini-ratio',
-    name: 'Gini Ratio',
-    shortName: 'Gini Ratio',
+    name: 'Rasio Gini',
+    shortName: 'Rasio Gini',
     category: 'sosial',
     unit: '',
-    definition: 'Ukuran derajat ketimpangan distribusi pendapatan atau pengeluaran penduduk yang berkisar antara 0 (kemerataan sempurna) hingga 1 (ketimpangan sempurna).',
+    definition: 'Ukuran derajat ketimpangan distribusi pengeluaran penduduk yang didasarkan pada Kurva Lorenz, dengan nilai berkisar antara 0 (pemerataan sempurna) hingga 1 (ketimpangan sempurna).',
     polarity: 'lower_is_better',
     featured: false,
     dataPoints: [
@@ -700,32 +678,31 @@ export const RAW_INDICATORS: Omit<StrategicIndicator, 'currentYear' | 'currentVa
       { year: 2024, value: 0.401 },
       { year: 2025, value: 0.447 }
     ],
-    insightSnippet: 'Gini Ratio tercatat sebesar 0,447 pada 2025 (kategori ketimpangan sedang), menunjukkan tantangan perlunya penguatan pemerataan manfaat ekonomi daerah.',
+    insightSnippet: 'Rasio Gini Kabupaten Teluk Bintuni tercatat sebesar 0,447 pada 2025, berada dalam rentang 0,3 hingga 0,5 yang tergolong kategori ketimpangan sedang.',
     story: {
-      title: 'Menyusutkan Jurang Kesenjangan Ekonomi Daerah',
-      subtitle: 'Tantangan Distribusi Pendapatan dan Pemerataan Antarwilayah di Teluk Bintuni',
-      summaryQuote: 'Gini Ratio 0,447 menegaskan pentingnya memperluas pemerataan hasil pembangunan dan perlindungan daya beli bagi kelompok masyarakat bawah.',
+      title: 'Ketimpangan Pengeluaran Penduduk Daerah',
+      summaryQuote: 'Rasio Gini Kabupaten Teluk Bintuni pada tahun 2025 tercatat sebesar 0,447 poin dan masuk dalam kategori ketimpangan sedang.',
       paragraphs: [
-        'Gini Ratio Kabupaten Teluk Bintuni pada tahun 2025 tercatat sebesar 0,447, meningkat 0,046 poin dibanding capaian tahun 2024 yang tercatat sebesar 0,401.',
-        'Kenaikan ini didorong oleh melebarnya kesenjangan pengeluaran seiring pesatnya akselerasi penerimaan pada sektor industri padat modal/migas dibandingkan sektor perdesaan dan informal.'
+        'Berdasarkan hasil Survei Sosial Ekonomi Nasional (Susenas), nilai Rasio Gini penduduk Kabupaten Teluk Bintuni pada tahun 2025 mencapai 0,447 poin. Angka ini menempatkan tingkat ketimpangan pengeluaran masyarakat Teluk Bintuni ke dalam kategori ketimpangan sedang sesuai kriteria BPS (rentang 0,3 sampai dengan 0,5).',
+        'Dalam kurun waktu lima tahun terakhir (2021–2025), nilai Rasio Gini berada pada kisaran 0,366 hingga 0,447 poin, mencapai titik terendah pada tahun 2021 (0,366 poin) dan berada pada level 0,447 pada tahun 2025.'
       ],
       keyHighlights: [
-        { label: 'Gini Ratio 2025', value: '0,447', description: 'Kategori ketimpangan Sedang (skala BPS)' },
-        { label: 'Kenaikan Poin', value: '+0,046 Poin', description: 'Perubahan dibanding tahun 2024' },
-        { label: 'Fokus Kebijakan', value: 'Pemerataan Sosial', description: 'Perlindungan daya beli 40% terbawah' }
+        { label: 'Rasio Gini 2025', value: '0,447', description: 'Kategori ketimpangan sedang (rentang 0,3–0,5)' },
+        { label: 'Kategori BPS', value: 'Sedang', description: 'Nilai koefisien berada di antara 0,300 dan 0,500' },
+        { label: 'Titik Terendah', value: '0,366', description: 'Capaian 5 tahun terakhir (tahun 2021)' }
       ],
-      policyContext: 'Pemberdayaan ekonomi kerakyatan dan perlindungan daya beli kelompok 40% terbawah secara bertahap menekan kesenjangan antarwilayah.',
+      policyContext: 'Rasio Gini diupayakan agar semakin mendekati nol untuk menunjukkan adanya pemerataan distribusi pendapatan dan pengeluaran antar penduduk.',
       humanScaleMeaning: {
-        ratioText: 'Indeks Ketimpangan 0,447 (Kategori Sedang)',
+        ratioText: 'Rasio Gini 0,447 (Kategori Sedang)',
         numerator: 45,
         denominator: 100,
-        description: 'Koefisien Gini berada pada angka 0,447 (skala 0–1), masuk dalam kategori ketimpangan sedang yang menunjukkan perlunya akselerasi pemerataan ekonomi antardistrik.',
-        contextNote: 'Nilai Gini berkisar antara 0 (kemerataan sempurna) hingga 1 (ketimpangan sempurna). Standar BPS mengkategorikan 0,4–0,5 sebagai ketimpangan sedang.'
+        description: 'Rasio Gini Kabupaten Teluk Bintuni sebesar 0,447 berada dalam rentang 0,3 hingga 0,5, yang menurut kriteria BPS tergolong dalam kategori ketimpangan sedang.',
+        contextNote: 'Nilai 0 menunjukkan pemerataan pengeluaran sempurna (setiap orang memiliki pengeluaran yang sama), sedangkan nilai 1 menunjukkan ketimpangan sempurna.'
       }
     },
     publications: INKESRA_PUBLICATIONS,
     source: 'Indikator Kesejahteraan Rakyat - BPS Kabupaten Teluk Bintuni',
-    updatedAt: 'Agustus 2024'
+    updatedAt: 'Desember 2025'
   }
 ];
 
@@ -739,9 +716,11 @@ export function processIndicators(rawList: typeof RAW_INDICATORS): StrategicIndi
     const current = sortedPoints[len - 1] || { year: 2024, value: 0 };
     const previous = sortedPoints[len - 2] || { year: 2023, value: current.value };
 
-    const changeValue = parseFloat((current.value - previous.value).toFixed(2));
+    const decimals = item.code === 'GINI' ? 3 : 2;
+    const rawDiff = current.value - previous.value;
+    const changeValue = parseFloat(rawDiff.toFixed(decimals));
     const changePercent = previous.value !== 0 
-      ? parseFloat(((changeValue / Math.abs(previous.value)) * 100).toFixed(2)) 
+      ? parseFloat(((rawDiff / Math.abs(previous.value)) * 100).toFixed(2)) 
       : 0;
 
     let trendDirection: 'up' | 'down' | 'neutral' = 'neutral';

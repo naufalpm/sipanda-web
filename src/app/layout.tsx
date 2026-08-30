@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'SIPANDA - Sistem Informasi Penyajian Indikator Daerah | BPS Kabupaten Teluk Bintuni',
-  description: 'Platform resmi diseminasi data statistik interaktif Badan Pusat Statistik (BPS) Kabupaten Teluk Bintuni. Eksplorasi capaian indikator strategis daerah: IPM, Kemiskinan, PDRB, dan Ketenagakerjaan.',
+  description: 'SIPANDA (Sistem Informasi Penyajian Indikator Daerah) adalah portal resmi penyajian indikator strategis oleh BPS Kabupaten Teluk Bintuni guna mendukung perencanaan, evaluasi, dan perumusan kebijakan daerah berbasis data yang akurat.',
   keywords: [
     'SIPANDA',
     'BPS Teluk Bintuni',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'BPS Kabupaten Teluk Bintuni' }],
   openGraph: {
     title: 'SIPANDA - BPS Kabupaten Teluk Bintuni',
-    description: 'Sistem Informasi Penyajian Indikator Daerah - BPS Kabupaten Teluk Bintuni',
+    description: 'Portal resmi penyajian indikator strategis oleh BPS Kabupaten Teluk Bintuni guna mendukung perencanaan, evaluasi, dan perumusan kebijakan daerah berbasis data yang akurat.',
     siteName: 'SIPANDA Teluk Bintuni',
     locale: 'id_ID',
     type: 'website',

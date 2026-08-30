@@ -6,8 +6,6 @@ import {
   BookOpen, 
   Download, 
   ExternalLink, 
-  Copy, 
-  Check, 
   ChevronLeft,
   ChevronRight,
   Sparkles,
@@ -19,7 +17,6 @@ interface StoryPublicationsProps {
 }
 
 export function StoryPublications({ indicator }: StoryPublicationsProps) {
-  const [copiedCitation, setCopiedCitation] = useState(false);
   const [downloadModalPub, setDownloadModalPub] = useState<Publication | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
@@ -57,15 +54,6 @@ export function StoryPublications({ indicator }: StoryPublicationsProps) {
     }
   ];
 
-  const citationText = `Badan Pusat Statistik Kabupaten Teluk Bintuni. (${indicator.currentYear}). ${indicator.name} Kabupaten Teluk Bintuni: SIPANDA Portal Diseminasi Data Strategis Daerah. https://telukbintunikab.bps.go.id`;
-
-  const handleCopyCitation = () => {
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(citationText);
-      setCopiedCitation(true);
-      setTimeout(() => setCopiedCitation(false), 2000);
-    }
-  };
 
   // Update visible card count based on screen width
   useEffect(() => {
@@ -144,30 +132,12 @@ export function StoryPublications({ indicator }: StoryPublicationsProps) {
               Publikasi Rujukan BPS
             </h2>
             <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400 mt-2 font-medium">
-              Buka dan unduh dokumen rilis data statistik resmi BPS Kabupaten Teluk Bintuni.
+              Buka dan unduh publikasi resmi BPS Kabupaten Teluk Bintuni.
             </p>
           </div>
 
-          <div className="flex items-center gap-2 self-start md:self-auto">
-            <button
-              onClick={handleCopyCitation}
-              className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-300 shadow-xs transition-all"
-            >
-              {copiedCitation ? (
-                <>
-                  <Check className="w-4 h-4 text-emerald-600" />
-                  <span>Kutipan Tersalin!</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-4 h-4 text-slate-400" />
-                  <span>Salin Format Sitasi</span>
-                </>
-              )}
-            </button>
-
-            {publications.length > visibleCount && (
-              <div className="flex items-center gap-1.5 bg-white dark:bg-slate-900 px-2.5 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs">
+          {publications.length > visibleCount && (
+            <div className="flex items-center gap-1.5 bg-white dark:bg-slate-900 px-2.5 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs self-start md:self-auto">
                 <button
                   onClick={prevSlide}
                   disabled={currentIndex === 0}
@@ -197,7 +167,6 @@ export function StoryPublications({ indicator }: StoryPublicationsProps) {
                 </button>
               </div>
             )}
-          </div>
         </div>
 
         {/* Card Component Renderer */}
