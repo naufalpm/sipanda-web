@@ -2,10 +2,10 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { 
-  STRATEGIC_INDICATORS, 
-  CATEGORIES, 
-  getIndicatorBySlug 
-} from '@/data/mockIndicators';
+  getIndicatorBySlug,
+  getStrategicIndicators,
+  CATEGORIES 
+} from '@/lib/indicators';
 import { IndicatorStoryContainer } from '@/components/story/IndicatorStoryContainer';
 
 interface PageProps {
@@ -14,7 +14,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const indicator = getIndicatorBySlug(slug);
+  const indicator = await getIndicatorBySlug(slug);
 
   if (!indicator) {
     return {
@@ -35,14 +35,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export async function generateStaticParams() {
-  return STRATEGIC_INDICATORS.map((indicator) => ({
+  const indicators = await getStrategicIndicators();
+  return indicators.map((indicator) => ({
     slug: indicator.slug,
   }));
 }
 
 export default async function IndicatorStoryPage({ params }: PageProps) {
   const { slug } = await params;
-  const indicator = getIndicatorBySlug(slug);
+  const [indicator, allIndicators] = await Promise.all([
+    getIndicatorBySlug(slug),
+    getStrategicIndicators()
+  ]);
 
   if (!indicator) {
     notFound();
@@ -54,7 +58,7 @@ export default async function IndicatorStoryPage({ params }: PageProps) {
     <IndicatorStoryContainer
       indicator={indicator}
       categoryMeta={categoryMeta}
-      allIndicators={STRATEGIC_INDICATORS}
+      allIndicators={allIndicators}
     />
   );
 }

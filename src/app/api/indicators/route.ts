@@ -1,21 +1,19 @@
-import { NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+import { NextResponse } from 'next/server';
+import { getStrategicIndicators } from '@/lib/indicators';
 
 export async function GET() {
   try {
-    const indicators = await prisma.indicator.findMany({
-      include: {
-        dataPoints: {
-          orderBy: { year: 'asc' }
-        }
-      }
-    })
-    return NextResponse.json({ success: true, data: indicators })
+    const indicators = await getStrategicIndicators();
+    return NextResponse.json({
+      success: true,
+      total: indicators.length,
+      data: indicators
+    });
   } catch (error) {
-    console.error('Error fetching indicators:', error)
+    console.error('Error in /api/indicators:', error);
     return NextResponse.json(
-      { success: false, message: 'Gagal mengambil data indikator' },
+      { success: false, message: 'Gagal mengambil data indikator dari database' },
       { status: 500 }
-    )
+    );
   }
 }

@@ -10,22 +10,55 @@ datasource db {
 }
 
 model Indicator {
-  id          String      @id @default(uuid())
-  code        String?     @unique
-  name        String
-  unit        String?
-  description String?
-  dataPoints  DataPoint[]
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
+  id             String        @id
+  code           String        @unique
+  slug           String        @unique
+  name           String
+  shortName      String?
+  category       String
+  unit           String?
+  definition     String?
+  polarity       String        @default("higher_is_better")
+  featured       Boolean       @default(false)
+  insightSnippet String?
+  story          Json?
+  source         String?
+  dataPoints     DataPoint[]
+  publications   Publication[] @relation("IndicatorPublications")
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([category])
+  @@index([slug])
 }
 
 model DataPoint {
   id          String    @id @default(uuid())
   year        Int
   value       Float
+  note        String?
   indicatorId String
   indicator   Indicator @relation(fields: [indicatorId], references: [id], onDelete: Cascade)
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
+
+  @@unique([indicatorId, year])
+  @@index([indicatorId, year])
+}
+
+model Publication {
+  id                String      @id
+  title             String
+  year              Int
+  coverUrl          String?
+  pdfUrl            String?
+  catalogNumber     String?
+  publicationNumber String?
+  releaseDate       String?
+  description       String?
+  indicators        Indicator[] @relation("IndicatorPublications")
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  @@index([year])
 }

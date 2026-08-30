@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Navbar } from '@/components/dashboard/Navbar';
 import { HeroBanner } from '@/components/dashboard/HeroBanner';
 import { CategoryFilter, SortOption } from '@/components/dashboard/CategoryFilter';
@@ -20,24 +20,43 @@ import {
 import Link from 'next/link';
 
 export default function HomePage() {
+  const [indicators, setIndicators] = useState<StrategicIndicator[]>(STRATEGIC_INDICATORS);
   const [selectedCategory, setSelectedCategory] = useState<IndicatorCategory | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('default');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [quickModalIndicator, setQuickModalIndicator] = useState<StrategicIndicator | null>(null);
 
+  // Sync indicators with PostgreSQL database via API
+  useEffect(() => {
+    async function loadDbIndicators() {
+      try {
+        const res = await fetch('/api/indicators');
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && Array.isArray(json.data) && json.data.length > 0) {
+            setIndicators(json.data);
+          }
+        }
+      } catch (err) {
+        console.warn('Using default indicators due to API error:', err);
+      }
+    }
+    loadDbIndicators();
+  }, []);
+
   // Category counts calculation
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     CATEGORIES.forEach((cat) => {
-      counts[cat.id] = STRATEGIC_INDICATORS.filter((i) => i.category === cat.id).length;
+      counts[cat.id] = indicators.filter((i) => i.category === cat.id).length;
     });
     return counts;
-  }, []);
+  }, [indicators]);
 
   // Filtered & Sorted indicators
   const filteredIndicators = useMemo(() => {
-    let result = [...STRATEGIC_INDICATORS];
+    let result = [...indicators];
 
     // Filter by Category
     if (selectedCategory !== 'all') {
@@ -76,7 +95,7 @@ export default function HomePage() {
     }
 
     return result;
-  }, [selectedCategory, searchQuery, sortBy]);
+  }, [indicators, selectedCategory, searchQuery, sortBy]);
 
   const handleSearchFocus = () => {
     const searchInput = document.getElementById('indicator-search');
@@ -95,7 +114,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
       {/* Top Navigation */}
-      <Navbar onSearchFocus={handleSearchFocus} totalIndicators={STRATEGIC_INDICATORS.length} />
+      <Navbar onSearchFocus={handleSearchFocus} totalIndicators={indicators.length} />
 
       {/* Main Content */}
       <main className="flex-1">
