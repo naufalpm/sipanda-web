@@ -105,7 +105,7 @@ export async function getStrategicIndicators(): Promise<StrategicIndicator[]> {
     });
 
     if (dbIndicators && dbIndicators.length > 0) {
-      return dbIndicators.map((item) => calculateIndicatorMetrics(item));
+      return dbIndicators.map((item: any) => calculateIndicatorMetrics(item));
     }
   } catch (error) {
     console.warn('⚠️ Database query failed or unavailable, falling back to static verified data:', error);
@@ -132,7 +132,7 @@ export async function getIndicatorBySlug(slug: string): Promise<StrategicIndicat
     });
 
     if (dbIndicator) {
-      return calculateIndicatorMetrics(dbIndicator);
+      return calculateIndicatorMetrics(dbIndicator as any);
     }
   } catch (error) {
     console.warn(`⚠️ DB query for slug '${slug}' failed, falling back to static verified data:`, error);
