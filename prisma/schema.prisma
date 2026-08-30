@@ -51,11 +51,16 @@ model Publication {
   title             String
   year              Int
   coverUrl          String?
+  coverGradient     String?
   pdfUrl            String?
   catalogNumber     String?
   publicationNumber String?
   releaseDate       String?
   description       String?
+  abstraction       String?
+  pageCount         Int?
+  bpsUrl            String?
+  fileSize          String?
   indicators        Indicator[] @relation("IndicatorPublications")
   createdAt         DateTime    @default(now())
   updatedAt         DateTime    @updatedAt
