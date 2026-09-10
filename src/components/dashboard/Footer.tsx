@@ -91,7 +91,7 @@ export function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               {/* Email */}
               <a
-                href="mailto:bpstelukbintuni@gmail.com"
+                href="mailto:bps9104@bps.go.id"
                 className="p-2 rounded-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-xs flex items-center gap-2.5 group transition-all"
               >
                 <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
@@ -102,7 +102,7 @@ export function Footer() {
                     Email
                   </span>
                   <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate block">
-                    bpstelukbintuni@gmail.com
+                    bps9104@bps.go.id
                   </span>
                 </div>
               </a>
@@ -133,7 +133,7 @@ export function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/bpstelukbintuni"
+                href="https://www.facebook.com/share/17NHic2i84/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-xs flex items-center gap-2.5 group transition-all"
